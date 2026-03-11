@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  background: #f2f2f7;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.header-logo {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 8px;
+  color: #c41e1e;
+}
+
+.app-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #1a1a1a;
+}
+
+.header-sub {
+  font-size: 15px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Tabs */
+.list-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 2px 0;
+}
+
+.tab {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #e8e8e8;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.tab.active {
+  background: #c41e1e;
+  color: white;
+}
+
+.tab.empty {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tab-soon {
+  font-size: 10px;
+  background: #ddd;
+  color: #888;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+/* Content */
+.list-content {
+  padding-bottom: 20px;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  padding: 20px 4px 10px;
+}
+
+.list-description {
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+  padding: 0 8px 4px;
+  line-height: 1.4;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 15px;
+}
+
+/* Safe area for mobile */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .app {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
+  }
+}
