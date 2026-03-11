@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/acp-reading-list/static/css/main.23d51a31.css",
+    "main.js": "/acp-reading-list/static/js/main.45bb7835.js",
+    "service-worker.js": "/acp-reading-list/service-worker.js",
+    "index.html": "/acp-reading-list/index.html",
+    "main.23d51a31.css.map": "/acp-reading-list/static/css/main.23d51a31.css.map",
+    "main.45bb7835.js.map": "/acp-reading-list/static/js/main.45bb7835.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23d51a31.css",
+    "static/js/main.45bb7835.js"
+  ]
+}
